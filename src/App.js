@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+// src/index.js or src/App.js
+//For the slideshow
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import React from 'react'
 import './App.css';
+import Home from './components/Home/Home';
+import AboutUs from './components/AboutUS/About';
+import MiniHeader from './components/Header/MiniHeader';
+import Resources from './components/Resources/Resources';
+import GetInvolved from './components/GetInvolved/GetInvolved';
+
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
+      <MiniHeader />   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/GetInvolved" element={<GetInvolved />} />
+      </Routes>
     </div>
+
+    </Router>
   );
 }
 

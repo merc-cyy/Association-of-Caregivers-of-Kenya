@@ -1,0 +1,627 @@
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.nav-item-custom {
+    margin-right: 20px;
+}
+
+.nav-item-custom a {
+    text-decoration: none;
+    color:rgb(0, 110, 255)
+
+}
+
+.nav-item-custom a:hover{
+    color:blue;
+    transform: scale(1.1);
+    font-size: 1.2rem;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.container1{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    padding: 0;
+    position:fixed;
+        /* Keeps the header fixed at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+        /* Ensures it appears above other elements */
+}
+
+
+/* In your CSS or within a styled component*/
+.homephoto {
+    background-image: url('../components/images/AKCPic1.png');
+    background-size: cover;
+    /* Make sure the image covers the entire section */
+    background-position: center;
+    object-fit: cover;
+    /*Center the image*/
+    position: relative; 
+    /* Important for positioning the header */
+    background-attachment: fixed;
+        /* Fixes the image in place */
+    min-height: 100vh;
+        /* Ensure the image covers the entire viewport height */
+    padding-top: 80px;
+        /* or adjust based on your layout needs */
+}
+
+.logo1{
+    border-radius: 50%;/*to make it round*/
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.content {
+    /* position: absolute; */
+    /* margin-top: auto;
+    left: 0;
+    width: 100%; */
+    position: relative;
+    margin-top: 120px;
+    justify-content: center;
+    height: 200px;
+    background: rgba(0, 0, 0,);
+    /* Dark overlay with 50% opacity */
+    z-index: 1;
+    /* Ensure the overlay is above the background image */
+    
+}
+
+
+.content-title {
+    position: relative;
+    z-index: 5;
+    /* Ensure the content is above the overlay */
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#home-title{
+    padding-top: 10px;
+    font-size: xx-large;
+    font-size: 40px;
+    color: white;
+        /* Text color */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home-title-text{
+    margin-top: 10px;
+}
+.content:hover{
+    /* backdrop-filter: blur(5px); */
+    transform: scale(1.2);
+    font-size: 1.2rem;
+    transition: font-size 0.3s ease; 
+ } 
+
+.content-paragraph {
+    position: relative;
+    margin-top: 0;
+    z-index: 5;
+    /* Ensure the content is above the overlay */
+    color:white;
+    /* Adjust text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+            /* Centers the text horizontally */
+    margin: 0 auto;
+            /* Centers the container itself horizontally if its width is set */
+    max-width: 600px;
+            /* Optional: Limits the width of the text block */
+    padding: 20px;
+            /* Optional: Adds padding around the text */
+    line-height: 1.5;
+            /* Optional: Adjusts line height for better readability */
+
+}
+
+.blurb-title{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+}
+
+.blurb-paragraph{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    
+}
+
+.scontainer{
+    position: relative;
+    height: 400px;
+    width: 100%;
+
+}
+
+.slide1{
+    background-image: url('../components/images/AKCPic3.png');
+    height: auto;
+    width: 100%;
+
+}  
+
+.about-content-image{
+    background-image: url('../components/images/AKCBackgroundPhoto.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        /* Fixes the image in place */
+    min-height: 100vh;
+            /* Ensure the image covers the entire viewport height */
+    padding-top: 80px;
+        /* or adjust based on your layout needs */
+    position: relative;
+        /* This is important for positioning the header */
+
+}
+
+.about-content{
+    padding-top: 80px;
+}
+
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+        /* Light background color */
+    border-radius: 8px;
+        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow */
+}
+
+.mission-vision-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80%;
+    max-width: 1200px;
+    padding-left: 30px;
+}
+
+.mission-img,
+.vision-img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.mission-text,
+.vision-text {
+    flex: 1;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .mission-vision-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-img,
+    .vision-img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+
+.resources-container {
+    display: flex;
+    /* Use flexbox to create a flexible layout */
+    padding: 20px;
+    /* Add padding around the container */
+    background-color: #f1eeee;
+}
+
+.resources-nav {
+    flex: 1;
+    max-width: 250px;
+    /* Allows the sidebar to take up one part of the available space */
+    padding-right: 20px;
+    /* Add space to the right of the sidebar */
+
+}
+
+.resources-nav h2 {
+    font-size: 1.5em;
+    /* Set the font size for the heading */
+    margin-bottom: 20px;
+    /* Add space below the heading */
+}
+
+.resources-nav ul {
+    list-style: none;
+    /* Remove bullet points from the list */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.resources-nav ul li {
+    margin-bottom: 10px;
+    /* Add space below each list item */
+}
+.resources-nav ul li::before {
+    content:"\25B6";
+    padding-right: 10px;
+    color: #000;
+}
+
+.resources-nav ul li a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color:#333;
+    /* Set the text color of the links */
+    font-size: 1.1em;
+    /* Set the font size of the links */
+}
+
+.resources-nav ul li a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+    color:rgb(62, 144, 251);
+}
+
+.resources-content {
+    flex: 3;
+    /* Allows the content area to take up three parts of the available space */
+    background-color: #f1eeee;
+}
+
+.resources-content section {
+    margin-bottom: 40px;
+    /* Add space below each section */
+}
+
+.resources-content h2 {
+    font-size: 1.5em;
+    /* Set the font size for section headings */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+.resources-content p {
+    font-size: 1em;
+    /* Set the font size for paragraph text */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+/* Card.css */
+.card {
+    background-color: #fff;
+    /* Sets the background color of the card to white */
+    border: 1px solid #ddd;
+    /* Adds a light gray border around the card */
+    border-radius: 25px;
+    /* Rounds the corners of the card with an 8px radius */
+    padding: 16px;
+    /* Adds 16px padding inside the card */
+    text-align: center;
+    /* Centers the text and content inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow below the card */
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color:#4f79e4;
+    transform: scale(1.1);
+    color:yellow;
+
+}
+
+.card:hover .card-text {
+    color: white;
+}
+
+.card-icon {
+    font-size: 2rem;
+    /* Sets the font size of the icon to 2 rem units (relative to the root font size) */
+    margin-bottom: 8px;
+    /* Adds 8px margin below the icon */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    /* Sets the font size of the title to 1.25 rem units */
+    margin: 8px 0;
+    /* Adds 8px margin above and below the title */
+}
+
+.card-text{
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    /* Uses Flexbox layout for the container */
+    flex-wrap: wrap;
+    /* Allows the items to wrap onto multiple lines if necessary */
+    gap: 16px;
+    /* Adds 16px gap between items */
+    justify-content: center;
+    /* Centers the items horizontally within the container */
+}
+
+.card-container .card {
+    flex: 1 1 calc(33.333% - 32px);
+    /* Defines the size and behavior of each card:
+     - `flex: 1 1` allows the card to grow and shrink if needed.
+     - `calc(33.333% - 32px)` makes each card take up roughly one-third of the container width minus the gap (16px on each side) */
+    max-width: calc(33.333% - 32px);
+    /* Ensures that the card does not exceed one-third of the container width minus the gap */
+}
+
+.join-us-image{
+    background-image: url('../components/images/AKCJoinUs.png');
+    background-size: cover;
+        /* Ensure the image covers the entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.resources-image{
+    background-image: url('../components/images/AKCResource2.png');
+    background-size: cover;
+            /* Ensure the image covers the entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    
+}
+
+.about-image {
+    background-image: url('../components/images/AKCAbout.png');
+    background-size: cover;
+    /* Ensure the image covers the entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+}
+
+.header-image {
+    background-image: url('../components/images/AKCPic1.png');
+    background-size: cover;
+    /* Ensure the image covers the entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+}
+
+.section-card{
+    background-color: #fff;
+        /* Sets the background color of the card to white */
+    border: 1px solid #ddd;
+        /* Adds a light gray border around the card */
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Adds a subtle shadow below the card */
+        transition: all 0.3s ease;
+}
+.join-button {
+    background-color: #4CAF50;
+    /* Green background */
+    border: none;
+    /* Removes any default border */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Adds space inside the button (top-bottom: 10px, left-right: 20px) */
+    text-align: center;
+    /* Centers the text inside the button */
+    text-decoration: none;
+    /* Removes any default underline on text */
+    display: inline-block;
+    /* Makes the button inline, but allows setting width/height/padding */
+    font-size: 16px;
+    /* Sets the font size of the button text */
+    margin-top: 20px;
+    /* Adds space above the button */
+    cursor: pointer;
+    /* Changes the cursor to a pointer (hand icon) on hover */
+    border-radius: 4px;
+    /* Rounds the button’s corners */
+    transition: background-color 0.3s ease;
+    /* Smoothly changes background color when hovered */
+}
+
+.join-button:hover {
+    background-color: #4CAF50;
+    /* Darker green background when the user hovers over the button */
+}.join-button {
+  background-color: #7cd500; /* Green background */
+  border: none; /* Removes any default border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Adds space inside the button (top-bottom: 10px, left-right: 20px) */
+  text-align: center; /* Centers the text inside the button */
+  text-decoration: none; /* Removes any default underline on text */
+  display: inline-block; /* Makes the button inline, but allows setting width/height/padding */
+  font-size: 16px; /* Sets the font size of the button text */
+  margin-top: 20px; /* Adds space above the button */
+  cursor: pointer; /* Changes the cursor to a pointer (hand icon) on hover */
+  border-radius: 4px; /* Rounds the button’s corners */
+  transition: all 0.3s ease; /* Smoothly changes background color when hovered */
+}
+
+.join-button:hover {
+  background-color: #45a049; /* Darker green background when the user hovers over the button */
+  transform: scale(1.1);
+
+}
+
+/* Slideshow.css */
+.slide {
+    position: relative;
+        max-width: 1000px;
+        /* Set a maximum width for the card */
+        max-height: 500px;
+        transform: translateX(200px);
+        margin: 0 auto;
+        /* Center the card horizontally */
+        border-radius: 10px;
+        /* Rounded corners */
+        overflow: hidden;
+        /* Hide any overflow */
+ 
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(70%);
+
+}
+
+.slide-text {
+    position: absolute;
+    padding: 10px;
+    top: 150px;
+    left: 30px;
+    color:white;
+    font: bolder;
+    font-size:x-large;
+    max-width: 500px;
+}
+
+.slide-button{
+            
+            transform: translateY(230px);
+            background-color:rgb(0, 110, 255);
+            /* Green background */
+            border: none;
+            /* Removes any default border */
+            color: white;
+            /* White text color */
+            padding: 10px 20px;
+            /* Adds space inside the button (top-bottom: 10px, left-right: 20px) */
+            text-align: center;
+            /* Centers the text inside the button */
+            text-decoration: none;
+            /* Removes any default underline on text */
+            display: inline-block;
+            /* Makes the button inline, but allows setting width/height/padding */
+            font-size: 16px;
+            /* Sets the font size of the button text */
+            margin-top: 20px;
+            /* Adds space above the button */
+            cursor: pointer;
+            /* Changes the cursor to a pointer (hand icon) on hover */
+            border-radius: 4px;
+            /* Rounds the button’s corners */
+            transition: all 0.3s ease;
+            /* Smoothly changes background color when hovered */ 
+
+}
+
+.slide-button:hover{
+    transform: translateY(230px) scale(1.1);
+
+}
+
+.contact-title{
+    padding-top: 20px;
+    padding-left: 300px;
+    margin-bottom: -85px;
+}
+
+
+.contact-right{
+    display:flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 150px;
+    flex-wrap: wrap;
+}
+
+#contact-message{
+    margin-top: 10px;
+    width:100%;
+    height: 100px;
+}
+
+.input-box{
+    height: 30px;
+    width: 250px;
+    background-color: #e9e9e9;
+}
+
+.submit-button{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(62, 144, 251);
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover{
+    transform: scale(1.1);
+}
+
+.contactus{ 
+    background-color: #7b7878;
+    object-position: full;
+}
+
+.contactus-title{
+    padding-left: 700px
+}
+#contactus-text{
+    padding-left: 600px;
+    
+}
