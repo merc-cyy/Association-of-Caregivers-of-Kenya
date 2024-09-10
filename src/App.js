@@ -11,7 +11,7 @@ import MiniHeader from './components/Header/MiniHeader';
 import Resources from './components/Resources/Resources';
 import GetInvolved from './components/GetInvolved/GetInvolved';
 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

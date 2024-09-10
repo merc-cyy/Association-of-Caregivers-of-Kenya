@@ -1,8 +1,7 @@
 
 import React from 'react';
 import '../../styles/globals.css';
-import Logo from '../Header/Logo';
-import Navbar from '../Header/Navbar';
+
 import photo1 from '../images/AKCWhatWeDo.png'
 import photo2 from '../images/AKCMission.png';
 import photo3 from '../images/AKCVision.png'

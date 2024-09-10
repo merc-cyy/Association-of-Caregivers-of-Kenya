@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../../styles/globals.css';
-import { Link } from 'react-router-dom';
+
 
 const Resources = () => {
     return (

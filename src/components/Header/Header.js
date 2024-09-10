@@ -1,8 +1,6 @@
 
 import React from 'react';
-import Logo from './Logo';
-import Navbar from './Navbar';
-import MiniHeader from './MiniHeader';
+
 import '../../styles/globals.css';
 
 const Header = () => {
